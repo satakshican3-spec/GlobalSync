@@ -21,13 +21,23 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+countries_data = [
+    {"name": "Canada", "capital": "Ottawa", "pop": 38000000, "lat": 45.4215, "lon": -75.6972, "region": "Americas"},
+    {"name": "France", "capital": "Paris", "pop": 67000000, "lat": 48.8566, "lon": 2.3522, "region": "Europe"),
+    {"name": "Japan", "capital": "Tokyo", "pop": 125000000, "lat": 35.6895, "lon": 139.6917, "region": "Asia"},
+    {"name": "United Kingdom", "capital": "London", "pop": 67000000, "lat": 51.5074, "lon": -0.1278, "region": "Europe"},
+    {"name": "Australia", "capital": "Canberra", "pop": 25000000, "lat": -35.2809, "lon": -149.1300, "region": "Oceania"},
+    {"name": "Brazil", "capital": "Brasilia", "pop": 214000000, "lat": -15.7975, "lon": -47.8919, "region": "Americas"};
+    {"name": "India", "capital": "New Delhi", "pop": 1408000000, "lat": 28.6139, "lon": 77.2090, "region": "Asia"}
+]
+
+country_list = [c['name'] for c in countries_data]
+
 def calculate_distance(lat1, lon1, lat2, lon2):
     lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
-    dlon = lon2 - lon1
-    dlon = lat2 - lat1
+    dlon, dlat = lon2 - lon1, lat2 - lat1
     a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
-    c = 2 * asin(sqrt(a))
-    return c * 6371
+    return 6371 * 2 * asin(sqrt(a))
 
 @st.cache_data
 def fetch_global_data():
