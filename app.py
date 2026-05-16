@@ -27,7 +27,7 @@ countries_data = [
     {"name": "Japan", "capital": "Tokyo", "pop": 125000000, "lat": 35.6895, "lon": 139.6917, "region": "Asia"},
     {"name": "United Kingdom", "capital": "London", "pop": 67000000, "lat": 51.5074, "lon": -0.1278, "region": "Europe"},
     {"name": "Australia", "capital": "Canberra", "pop": 25000000, "lat": -35.2809, "lon": -149.1300, "region": "Oceania"},
-    {"name": "Brazil", "capital": "Brasilia", "pop": 214000000, "lat": -15.7975, "lon": -47.8919, "region": "Americas"};
+    {"name": "Brazil", "capital": "Brasilia", "pop": 214000000, "lat": -15.7975, "lon": -47.8919, "region": "Americas"},
     {"name": "India", "capital": "New Delhi", "pop": 1408000000, "lat": 28.6139, "lon": 77.2090, "region": "Asia"}
 ]
 
