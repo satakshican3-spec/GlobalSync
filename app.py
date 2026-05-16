@@ -98,7 +98,7 @@ with tab_geo:
 with tab_econ:
     st.write("### Economic Indicators")
     st.write(f"United Nations Member: {'YES' if selected_data.get('unMember') else 'NO'}")
-    st.write(f"Status: {selected_data.get('status', "N/A').upper()}")
+    st.write(f"Status: {selected_data.get('status', 'N/A').upper()}")
 
 st.write("---")
 st.caption("GlobalSync v1.1 | Professional Developer Suite")
