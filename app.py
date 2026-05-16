@@ -23,7 +23,7 @@ st.markdown("""
 
 countries_data = [
     {"name": "Canada", "capital": "Ottawa", "pop": 38000000, "lat": 45.4215, "lon": -75.6972, "region": "Americas"},
-    {"name": "France", "capital": "Paris", "pop": 67000000, "lat": 48.8566, "lon": 2.3522, "region": "Europe"),
+    {"name": "France", "capital": "Paris", "pop": 67000000, "lat": 48.8566, "lon": 2.3522, "region": "Europe"},
     {"name": "Japan", "capital": "Tokyo", "pop": 125000000, "lat": 35.6895, "lon": 139.6917, "region": "Asia"},
     {"name": "United Kingdom", "capital": "London", "pop": 67000000, "lat": 51.5074, "lon": -0.1278, "region": "Europe"},
     {"name": "Australia", "capital": "Canberra", "pop": 25000000, "lat": -35.2809, "lon": -149.1300, "region": "Oceania"},
